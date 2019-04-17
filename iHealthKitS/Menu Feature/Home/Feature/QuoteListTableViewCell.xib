@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="155" id="KGk-i7-Jjw" customClass="QuoteListTableViewCell" customModule="iHealthS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="517" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="517" height="154.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnv-b1-6Lj">
+                        <rect key="frame" x="347" y="111.5" width="100" height="30"/>
+                        <color key="backgroundColor" red="0.64313725490196072" green="0.074509803921568626" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="3IC-8b-OS5"/>
+                            <constraint firstAttribute="width" constant="100" id="yPF-T2-2gc"/>
+                        </constraints>
+                        <state key="normal" title="收藏">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="clickCollect:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yhM-q1-rHU"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lJ-GS-YPE">
+                        <rect key="frame" x="20" y="10" width="477" height="81.5"/>
+                        <string key="text">Acer Spin 3 配備的兩支前向喇叭，可在任何使用模式中傳達更清晰且宏亮的音效。精確式觸控板技術支援 Windows 10 手勢操控，能進行精準的指尖及手勢辨識，讓使用者能快速流暢地工作。此外，內建Gigabit 雙頻 Wi-Fi 5 搭載 MU-MIMO 技術，讓使用者能隨時與同事、客戶與好友保持聯繫。</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voj-xf-4Pn">
+                        <rect key="frame" x="50" y="111.5" width="100" height="30"/>
+                        <color key="backgroundColor" red="0.047058823529411764" green="0.40000000000000002" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="2pI-DZ-DN9"/>
+                            <constraint firstAttribute="width" constant="100" id="zCk-NH-gwp"/>
+                        </constraints>
+                        <state key="normal" title="分享">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBound" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="clickShare:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dIW-oo-X1R"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="0lJ-GS-YPE" secondAttribute="trailing" constant="20" id="BWk-x7-ybI"/>
+                    <constraint firstItem="gnv-b1-6Lj" firstAttribute="top" secondItem="0lJ-GS-YPE" secondAttribute="bottom" constant="20" id="IJL-3K-8vV"/>
+                    <constraint firstAttribute="bottom" secondItem="voj-xf-4Pn" secondAttribute="bottom" constant="13" id="aeZ-Iu-IWw"/>
+                    <constraint firstItem="0lJ-GS-YPE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="apj-81-sRw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gnv-b1-6Lj" secondAttribute="trailing" constant="50" id="bnb-Fj-Yjm"/>
+                    <constraint firstItem="voj-xf-4Pn" firstAttribute="top" secondItem="0lJ-GS-YPE" secondAttribute="bottom" constant="20" id="jf4-9n-alt"/>
+                    <constraint firstItem="0lJ-GS-YPE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="yBf-ec-r3h"/>
+                    <constraint firstItem="voj-xf-4Pn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="zR9-Eo-BTj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="label" destination="0lJ-GS-YPE" id="hhc-T2-qRE"/>
+            </connections>
+            <point key="canvasLocation" x="295.19999999999999" y="184.85757121439281"/>
+        </tableViewCell>
+    </objects>
+</document>
